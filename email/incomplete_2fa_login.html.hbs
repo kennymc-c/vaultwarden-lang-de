@@ -1,0 +1,31 @@
+Unvollständige Zwei-Faktor-Authentifizierung von {{{device}}}
+<!---------------->
+{{> email/email_header }}
+<table width="100%" cellpadding="0" cellspacing="0" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+   <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+      <td class="content-block" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; margin: 0; -webkit-font-smoothing: antialiased; padding: 0 0 10px; -webkit-text-size-adjust: none;" valign="top">
+         Jemand hat versucht, sich mit dem korrekten Master-Passwort bei deinem Konto anzumelden, hat aber nicht innerhalb von {{time_limit}} Minuten nach dem ersten Anmeldeversuch den korrekten Token oder die für den Abschluss der Zwei-Faktor-Authentifizierung erforderliche Aktion angegeben.
+      </td>
+   </tr>
+   <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+      <td class="content-block" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; margin: 0; -webkit-font-smoothing: antialiased; padding: 0 0 10px; -webkit-text-size-adjust: none;" valign="top">
+         <b>Datum</b>: {{datetime}}
+      </td>
+   </tr>
+         <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+      <td class="content-block" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; margin: 0; -webkit-font-smoothing: antialiased; padding: 0 0 10px; -webkit-text-size-adjust: none;" valign="top">
+            <b>IP-Addresse:</b> {{ip}}
+      </td>
+   </tr>
+         <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+      <td class="content-block" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; margin: 0; -webkit-font-smoothing: antialiased; padding: 0 0 10px; -webkit-text-size-adjust: none;" valign="top">
+            <b>Gerätetyp:</b> {{device}}
+      </td>
+   </tr>
+   <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+      <td class="content-block last" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; margin: 0; -webkit-font-smoothing: antialiased; padding: 0; -webkit-text-size-adjust: none;" valign="top">
+         Wenn das nicht du oder eine von dir bevollmächtigte Person warst, solltest du dein Master-Passwort so schnell wie möglich ändern, da es wahrscheinlich kompromittiert wurde.
+      </td>
+   </tr>
+</table>
+{{> email/email_footer }}
