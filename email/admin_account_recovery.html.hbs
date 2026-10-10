@@ -1,0 +1,18 @@
+Wiederherstellung des Administratorkontos der Organisation {{org_name}}
+<!---------------->
+{{> email/email_header }}
+<table width="100%" cellpadding="0" cellspacing="0" style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+    <tr style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">
+        <td class="content-block" style="font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; margin: 0; -webkit-font-smoothing: antialiased; padding: 0 0 10px; -webkit-text-size-adjust: none;" valign="top">
+            {{#if reset_password}}
+                Das Master-Passwort für <b style="margin: 0; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; box-sizing: border-box; font-size: 16px; color: #333; line-height: 25px; -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none;">{{user_name}}</b> wurde geändert.
+            {{/if}}
+            {{#if reset_2fa}}
+                Deine Zwei-Faktor-Authentifizierungsanbieter wurden zurückgesetzt.{{#if fallback_2fa_email}} Die Zwei-Faktor-Authentifizierung per Mail wurde als Ausweichmethode aktiviert.{{/if}}
+            {{/if}}
+            <br>
+            Wenn du diese Anfrage nicht veranlasst hast, wende dich bitte umgehend an deinen Administrator.
+        </td>
+    </tr>
+</table>
+{{> email/email_footer }}

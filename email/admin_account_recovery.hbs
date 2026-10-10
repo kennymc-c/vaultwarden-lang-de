@@ -1,0 +1,12 @@
+Wiederherstellung des Administratorkontos der Organisation {{org_name}}
+<!---------------->
+{{#if reset_password}}
+Das Master-Passwort für {{user_name}} wurde geändert.
+{{/if}}
+{{#if reset_2fa}}
+Deine Zwei-Faktor-Authentifizierungsanbieter wurden zurückgesetzt.{{#if fallback_2fa_email}} Die Zwei-Faktor-Authentifizierung per Mail wurde als Ausweichmethode aktiviert.{{/if}}
+{{/if}}
+
+Wenn du diese Anfrage nicht veranlasst hast, wende dich bitte umgehend an deinen Administrator.
+
+{{> email/email_footer_text }}
